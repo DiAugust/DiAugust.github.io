@@ -1,74 +1,155 @@
-<!DOCTYPE html5>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <title>Diego August</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" text="text/css" href="../css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="../imgs/icon.png" />
+    <title>Diego August</title>
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <script src="https://kit.fontawesome.com/33337ad330.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-    <header>
-        <nav id="header_menu">
-            <div id="header_menu_button1">
-                <span class="text-font"><a href="index.html" class="text-links">sobre</a></span>
-            </div>
-            <div id="header_menu_button2" <span class="text-font">/</span>
-            </div>
-            <div id="header_menu_button3" <span class="text-font"><a href="reflex.html" class="text-links">reflexões</a></span>
-            </div>
-        </nav>
-    </header>
-    <aside>
-        <img id="profile_img" src="../imgs/meblack.jpeg" alt="foto de um homem lindo" />
-        <div class="animprofile" id="profile_text">
-            <p1>Olá, sou Diego.</p1> <br>
-            <p2>Faço as coisas acontecerem.</p2>
-            <div class="social_icons">
-                <a href="mailto:contactdiegonow@gmail.com"><img id="mail_img" src="../imgs/mail.svg"></a>
-                <a href="https://twitter.com/afvei"><img id="twitter_img" alt="twitter icon" src="../imgs/twitter.png"> </a>
-                <a href="https://github.com/DiAugust"><img id="github_img" src="../imgs/github2.svg"></a>
-                <a href="https://medium.com/@afvei"><img id="medium_img" src="../imgs/medium-black.png"></a>
-            </div>
+<body class="body">
+    <div class="reveal main" id="main-content">
+        <div class="slides">
+            <section>
+                <div class="main-header">
+                    <div class="dash"></div>
+                    <h1>DIEGO AUGUSTO F.</h1>
+                    <h5>Desenvolvedor Web</h5>
+                </div>
+                <div class="social-icons">
+                    <a class="icon" target="_blank" href="https://www.twitter.com/afvei"><i class="fab fa-twitter"></i></a>
+                    <a class="icon" target="_blank" href="https://www.github.com/diaugust"><i class="fab fa-github"></i></a>
+                    <a class="icon" target="_blank" href="https://www.linkedin.com/in/diegoaugust"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="instructions" id="instructions">
+                    <p>Navegue usando as <span class="bold">setas do teclado</span> ou a <span class="bold">barra de espaços</span>.</p>
+                </div>
+                <div class="instructions" id="mobile-instructions">
+                    <p><span class="bold">Arraste</span> para navegar.</p>
+                </div>
+            </section>
+            <section>
+                <section data-background="src/noite.gif" data-background-transition="slide">
+                    <div class="main-header">
+                        <div class="dash"></div>
+                        <h2>SOBRE MIM</h2>
+                        <div class="arrow-down bounce">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </section>
+                <section data-background="#000" data-background-transition="slide" data-transition="slide">
+                    <ul class="about-items">
+                        <li><span class="accent">Desenvolvedor Web</span>. Designer. Músico.</li>
+                        <li class="fragment" data-fragment-index="1">stack atual: <span class="accent">html5</span>, CSS3, <span class="accent">javascript</span>, SQL e Git.</li>
+                        <li class="fragment" data-fragment-index="2">estudo tecnologias como <span class="accent">React</span>, Node, Electron, Bootstrap, Angular, Vala, Flutter, <span class="accent">React Native</span>, etc etc etc.</li>
+                        <li class="fragment" data-fragment-index="3">design e prototipagem com Adobe Photoshop, Adobe XD, <span class="accent">Figma</span> e GIMP.</li>
+                        <li class="fragment" data-fragment-index="4">morando em <span class="accent">São Paulo, SP</span>.</li>
+                    </ul>
+                </section>
+            </section>
+            <section data-background="#161616">
+                <section>
+                    <div class="main-header">
+                        <div class="dash"></div>
+                        <h2>PROJETOS</h2>
+                        <div class="arrow-down bounce">
+                            <i class="fa fa-fw fa-angle-double-down"></i>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="project-body">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <div class="dash"></div>
+                                <h3 class="project-title">TRYBE</h3>
+                                <h5 class="project-subtitle">Escola desenvolvimento de software</h5>
+                            </div>
+                            <p class="project-description">Com um programa de aprendizagem de alta qualidade, mentorias individuais e muitos desafios práticos, a Trybe é uma escola do futuro e para o futuro. Acelerando a carreira em desenvolvimento de software em aproximadamente 12 meses.</p>
+                            <p>O currículo foi desenhado em parceria com as melhores pessoas de tecnologia do mundo e as empresas mais queridas para se trabalhar.</p>
+                            <p class="sub-text">Stacks:</p>
+                            <ul class="feature-list">
+                                <li>JavaScript/ES6</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>React</li>
+                                <li>Node</li>
+                                <li>Express.js</li>
+                                <li>SQL</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                        <div class="project-display">
+                            <video id="epoch-vid" loop controls>
+                                <source data-src="src/trybe.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="project-body">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <div class="dash"></div>
+                                <h3 class="project-title">AjudaBH</h3>
+                                <h5 class="project-subtitle">Ferramenta para auxiliar pessoas em áreas de risco</h5>
+                            </div>
+                            <p class="project-description">Durante o HackaTrybe nos foi proposto desenvolver uma ferramenta que impactasse a vida das pessoas e colocasse em prática nossos conhecimentos. Dessa forma nasceu o AjudaBH, um site(futuro app) que com base numa pesquisa ou localidade atual mostra pontos de alagamentos, doações e ajuda em BH.</p>
+                            <p class="sub-text">Desenvolvido com:</p>
+                            <ul class="feature-list">
+                                <li>React</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Redux</li>
+                            </ul>
+                        </div>
+                        <div class="project-display">
+                            <video id="epoch-vid" autoplay loop controls>
+                                <source data-src="src/ajudabh.mkv" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="project-body">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <div class="dash"></div>
+                                <h3 class="project-title">Pixeltab (WIP)</h3>
+                                <h5 class="project-subtitle">Extensão para Google Chrome</h5>
+                            </div>
+                            <p class="project-description">Extensão gratuita para Chrome que substitui a página de nova aba padrão do navegador com um lembrete em formato de "focus". A cada hora uma nova tela animada em estilo pixelart é mostrada.</p>
+                            <p class="sub-text">Desenvolvido com:</p>
+                            <ul class="feature-list">
+                                <li>Javascript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                        <div class="project-display">
+                            <video id="epoch-vid" autoplay loop controls>
+                                <source data-src="src/pixeltab.mkv" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section data-background-transition="fade" data-transition="fade">
+                <div class="contact">
+                    <h3>Quer trabalhar comigo?</h3>
+                    <a href="mailto:contactdiegonow@gmail.com">
+                        <div class="main-btn">CONTATO</div>
+                    </a>
+                </div>
+            </section>
         </div>
-    </aside>
-    <article>
-        <div class="animlinebloc"></div>
-        <div class="animline"></div>
-        <ul>
-            <h2 class="text-topics">Quem?</h2>
-            <li><span class="horizontal_dots">Desenvolvedor Web</span></li>
-            <li><span class="horizontal_dots">Designer</span></li>
-            <li><span class="horizontal_dots">Músico</span></li>
-            <h2 class="text-topics">O que ando fazendo?</h2>
-            <li>Desenvolvendo web services</li>
-            <li>Aprendendo mais a cada dia na <span class="horizontal_dots">Trybe</span></li>
-            <li>Compartilhando conhecimento na <span class="horizontal_dots">Python Noob Club</span></li>
-            <li><span class="horizontal_dots">Tweetando como se não houvesse amanhã!</span></li>
-            <h2 class="text-topics">Projetos que participo</h2>
-            <h2 class="text-topics"><span class="horizontal_dots">Trybe</span></h2>
-            <li>Estudante de programação, foco em desenvolvimento frontend e backend com JavaScript.</li>
-            <li>Guardo alguns projetos feitos em aula lá no <span class="horizontal_dots">GitHub</span></li>
-            <h2 class="text-topics">Dev stack atual</h2>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>React</li>
-            <li>SQL Server</li>
-            <li>ShellScript</li>
-            <li>Python</li>
-            <h2 class="text-topics">Tecnologias que tenho usado</h2>
-            <li>JavaScript, Electron, PHP, Node.js, jQuery, Bootstrap, Angular, Vala, Flutter, React Native, etc etc etc.</li>
-            <h2 class="text-topics">Design e prototipagem</h2>
-            <li>Adobe Photoshop</li>
-            <li>Adobe XD</li>
-            <li>GIMP</li>
-            <li>Figma</li>
-        </ul>
-    </article>
-    <script src="../js/main.js"></script>
+    </div>
+    <script type="text/javascript" src="js/reveal.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
 </body>
 
 </html>
